@@ -186,3 +186,40 @@ return 0;
 }
 */
 
+//PROBLEM 8
+/*
+
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+   vector<double> grade;
+   for (int i = 0; i < n; i++) {
+        double grad;
+        cin >> grad;
+        grade.push_back(grad);
+    }
+    
+    double max = grade[0];
+    double min = grade[0];
+    double sum = 0;
+    
+    for (double grad : grade) {
+        if (grad > max) {
+            max = grad;
+        }
+        if (grad < min) {
+            min = grad;
+        }
+        sum += grad;
+    }
+    cout << "Minimum grade: " << min << endl;
+    cout << "Maximum grade: " << max << endl;
+    cout << "Average grade: " << sum/n << endl;
+    return 0;
+    
+}
+*/
