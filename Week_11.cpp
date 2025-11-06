@@ -59,7 +59,6 @@ int main() {
 
 //Problem3
 /*
- *
 
 #include <iostream>
 #include <iomanip>
@@ -98,7 +97,92 @@ int main(){
     multiplyMatrix(a,b,c);
 }
 
- */
 
 //Problem 4
+/*
+#include <iostream>
+#include <array>
+using namespace std;
+
+int findMax(int mat[][100],int n, int m){
+int max=mat[0][0];
+for(int i=0;i<n;i++){
+for(int j=0;j<m;j++){
+if(mat[i][j]>=max) max=mat[i][j];
+}
+}
+return max;
+}
+
+int main()
+{
+int n,m;
+cin>>n>>m;
+int mat[100][100];
+for(int i=0;i<n;i++){
+for(int j=0;j<m;j++){
+cin>>mat[i][j];
+}
+}
+cout <<findMax(mat,n,m);
+return 0;
+}
+*/
+
+
+//Problem 5
+/*
+#include <iostream>
+#include <array>
+using namespace std;
+
+
+int main()
+{
+    int n;
+    cin>>n;
+    int mat[n][n];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            cin>>mat[i][j];
+        }
+    }
+    for(int i=0;i<n;i++){
+        for(int j=0;j<n;j++){
+            cout<<mat[j][i]<<" ";
+        }    cout<<endl;
+    }
+    return 0;
+}
+*/
+
+//Problem 6
+/*
+
+#include <iostream>
+#include <array>
+using namespace std;
+
+
+int main()
+{
+int n,m;
+cout<<"row ";   cin>>n;
+cout<<"column ";cin>>m;
+int mat[n][m];
+for(int i=0;i<n;i++){
+for(int j=0;j<m;j++){
+cin>>mat[i][j];
+}
+}
+for(int i=0;i<n;i++){
+int sum =0;
+for(int j=0;j<m;j++){
+sum+= mat[i][j];
+cout<<mat[i][j]<<" ";
+}cout<<"Average of sum "<<double(sum)/m<<endl;
+}
+return 0;
+}
+*/
 
