@@ -185,7 +185,38 @@ cout<<mat[i][j]<<" ";
 return 0;
 }
 */
+//Problem 7
+/*
+#include <iostream>
+using namespace std;
 
+int main() {
+    int n;
+    cin >> n;
+    int a[100][100];
+  
+     for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            cin >> a[i][j];
+        }
+    }
+    bool symmetric = true;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (a[i][j] != a[j][i]) {
+                symmetric = false;
+            }
+        }
+    }
+
+    if (symmetric)
+        cout << "The matrix is symmetric" << endl;
+    else
+        cout << "The matrix is not symmetric" << endl;
+
+    return 0;
+}
+*/
 //PROBLEM 8
 /*
 
@@ -249,5 +280,30 @@ int main()
        cout<<grad<<" ";
     }
    
+}
+*/
+//Problem 10
+/*
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cin>>n;
+    int a[1000];
+    cout<<"Enter "<<n<<" numbers: ";
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    cout <<endl;
+    for (int i = 1; i < n - 1; i++) {
+        if (a[i] < a[i - 1] && a[i] < a[i + 1]) {
+            cout << a[i] << " ";
+        }
+    }
+
+    cout << endl;
+
+    return 0;
 }
 */
