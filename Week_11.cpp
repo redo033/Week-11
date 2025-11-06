@@ -223,3 +223,31 @@ int main()
     
 }
 */
+
+//PROBLEM 9 
+/*
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+   vector<double> vec;
+   for (int i = 0; i < n; i++) {
+        double d;
+        cin >> d;
+        if(d>0){
+        vec.push_back(d);}
+    }
+    int remove_val =0;
+   sort(vec.begin(),vec.end());
+    
+    for (double grad : vec) {
+       cout<<grad<<" ";
+    }
+   
+}
+*/
